@@ -1,7 +1,4 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "image-search-abstraction-layer-fcc",
   "version": "0.0.1",
   "description": "Free Code Camp API Project",
@@ -19,7 +16,7 @@
     "node": "8.1.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "url": "https://github.com/eTingz/image-search-api-fcc"
   },
   "license": "MIT",
   "keywords": [
