@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Image Search Abstraction Layer</title>
+      <meta name="Image Search Abstraction Layer" content="Free Code Camp API Project">
+      <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/style.css">
+   </head>
+
+   <body>
+     <div class="container">
+         <h1>Image Search Abstraction Layer</h1>
+         <h3>A Free Code Camp API Project Created by Eric Tingleff</h3>
+     </div>
+     <div>
+       <h2>Instructions</h2>
+       <br/>
+       <h3>
+         To Search Images:
+       </h3>
+       <h4>Add the following to the end of this page's URL:</h4>
+       <div class="urlEnd">/search/&lt;search term&gt;</div>
+       <br/>
+       <h4>
+         To move to a different page within search results add this to the search URL:
+       </h4>
+       <div>
+         ?offset=&lt;desired page number&gt;
+       </div>
+       <br/>
+       <h3>
+         To View the Recent Searches History:
+       </h3>
+       <h4>
+         Add the following to the end of this page's URL:
+       </h4>
+       <div class="urlEnd">
+         /history
+       </div>
+       <br/>
+       <br/>
+       <h2>
+         Example
+       </h2>
+       <br/>
+       <h4>
+         A search for images of Nicolas Cage: 
+       </h4>
+       <div class="example">
+         <a href="https://img-search-abstraction-layer-eric.glitch.me/search/nicolas%20cage">
+           https://img-search-abstraction-layer-eric.glitch.me/search/nicolas cage
+         </a>
+       </div>
+       <br/>
+       <h4>
+         To see the second page of results: 
+       </h4>
+       <div>
+         <a href="https://img-search-abstraction-layer-eric.glitch.me/search/nicolas%20cage?offset=2">
+           https://img-search-abstraction-layer-eric.glitch.me/search/nicolas cage?offset=2
+         </a>
+       </div>
+       <br/>
+       <h4>
+         To see the recent search history:
+       </h4>
+       <div>
+         <a href="https://img-search-abstraction-layer-eric.glitch.me/history">
+           https://img-search-abstraction-layer-eric.glitch.me/history
+         </a>
+       </div>
+     </div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
