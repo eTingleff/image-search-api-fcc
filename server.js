@@ -45,7 +45,7 @@ app.get("/search/:term", function (req, res, next) {
   var searchTerm = req.params.term;
   var page = 1;
   if (req.query.offset) {
-    page = req.query.offset;
+    page += req.query.offset;
   }
   client.search(searchTerm, { page: page })
   .then(function(images) {
