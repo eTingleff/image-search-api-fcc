@@ -15,7 +15,7 @@ var logSearch = function(db, search, callback) {
   var collection = db.collection('imageSearchHistory');
   var timestamp = Date.now();
   collection.insert({
-    searchTerm: search,
+    search_term: search,
     timestamp: timestamp
   }, function(err, result) {
     callback(result);
@@ -25,7 +25,7 @@ var logSearch = function(db, search, callback) {
 var getRecentHistory = function(db, callback) {
   var collection = db.collection('imageSearchHistory');
   
-  collection.find()
+  collection.find( { }, { _id: 0} )
     .sort( { timestamp: -1 } )
     .limit( 15 )
     .toArray(function(err, docs) {
@@ -78,6 +78,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/history', function (req, res) {
+  var recentHistory = [];
   MongoClient.connect(url, function(err, db) {
     getRecentHistory(db, function(result) {
       for (let search of result) {
