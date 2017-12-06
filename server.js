@@ -5,7 +5,7 @@ var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 var url = process.env.MONGOLAB_URI;
 
 const GoogleImages = require('google-images');
-const client = new GoogleImages(process.env.CSE_ID, process.env.API_Key);
+const client = new GoogleImages(process.env.CSE_ID, process.env.API_KEY);
 
 app.use(express.static('public'));
 
