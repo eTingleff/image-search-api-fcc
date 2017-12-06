@@ -1,1 +1,2 @@
-# image-search-api-fcc
+# Free Code Camp API Project
+Image Search Abstraction Layer
