@@ -9,7 +9,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "google-images": "^2.1.0",
-    "mongodb": "^2.2.33",
+    "mongodb": ">=3.1.13",
     "assert": "^1.4.1"
   },
   "engines": {
